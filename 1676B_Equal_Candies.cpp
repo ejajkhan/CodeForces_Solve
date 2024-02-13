@@ -15,7 +15,25 @@ int main()
     cin>>t;
     while(t--)
     {
-        cout<<"Hello World"<<endl;
+        geti(n);
+        int arr[n];
+        int mini=99999999;
+        for(int i=0;i<n;i++)
+        {
+            cin>>arr[i];
+            if(arr[i]<mini){mini=arr[i];}
+        }
+        int sum=0;
+        for(int i=0;i<n;i++)
+        {
+            if(arr[i]!=mini)
+            {
+                sum=sum+arr[i]-mini;
+            }
+        }
+        p(sum);
+
+
     }
     
     return 0;

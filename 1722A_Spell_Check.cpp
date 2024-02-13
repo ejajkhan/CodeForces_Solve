@@ -5,8 +5,6 @@
 #define ll long long int
 #define srt(a) sort(a.begin(),a.end())
 #define srta(a) sort(a.begin(),a.end(),greater<int>())
-#define geti(n) int n;cin>>n
-#define getarr(arr,n) int arr[n];for(int counter=0;counter<n;counter++){cin>>arr[counter];}
 using namespace std;
 
 int main()
@@ -15,7 +13,15 @@ int main()
     cin>>t;
     while(t--)
     {
-        cout<<"Hello World"<<endl;
+        string input,name="Timur";
+        int n;
+        cin>>n;
+        cin>>input;
+        srt(input);
+        srt(name);
+        if(input==name){yes;}
+        else{no;}
+        
     }
     
     return 0;
